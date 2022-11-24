@@ -1,0 +1,64 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.body
+{
+    background: url(../img/bg.jpg);
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#scoreupdate
+{
+    position: absolute;
+    top: 9px;
+    right:200px;
+    font-size: 40px;
+    font-weight: bold;
+
+}
+#hiscorebox
+{
+    position: absolute;
+    top: 49px;
+    right:170px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#board
+{
+    background:linear-gradient(rgb(116, 240, 116),rgb(172, 172, 62));
+    width: 90vmin;
+    height: 92vmin;
+    border: 2px solid black;/*to give black color border to the board */
+    display: grid;
+    grid-template-columns: repeat(18,1fr);/*these 2 line will divide the grid in 18*18 size matrix means 18 rows and 18 columns*/
+    grid-template-rows: repeat(18,1fr);
+
+}
+
+.head
+{
+    background :linear-gradient(red,yellow);
+    border: 2px solid purple;
+    transform: scale(1.02);
+
+}
+.snake
+{
+    background-color: purple;
+    border: .25vm white;
+    border-radius: 12px;
+}
+.food
+{
+    background: linear-gradient(red,purple);
+    border: .25vm black;
+    border-radius: 8px;
+}
